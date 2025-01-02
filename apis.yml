@@ -11,6 +11,8 @@ apis:
     properties:
       - url: https://portal.opentopography.org/apidocs
         type: Documentation
+      - type: OpenAPI
+        url: properties/opentopography-api-openapi.yml
     description: |-
 
       Access U.S. Geological Survey 3DEP raster datasets including 1m, 1/3
