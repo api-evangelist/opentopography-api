@@ -24,6 +24,8 @@ apis:
     name: OpenTopography API
     tags:
       - Public
+      - Topography
+      - Topographical
       - Catalog
     humanURL: https://portal.opentopography.org/apidocs
     properties:
