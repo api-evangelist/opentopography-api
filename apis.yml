@@ -5,9 +5,9 @@ apis:
   - aid: opentopography-api:opentopography-api
     name: OpenTopography API
     tags:
+      - Data
       - Topographical
       - Topography
-      - Data
     humanURL: https://portal.opentopography.org/apidocs
     properties:
       - url: https://portal.opentopography.org/apidocs
@@ -20,9 +20,9 @@ apis:
       USGS National Map.
 name: OpenTopography API
 tags:
+  - Data
   - Topographical
   - Topography
-  - Data
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
