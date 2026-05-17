@@ -69,7 +69,7 @@ common:
     description: News, updates, and articles from the OpenTopography team.
   - url: https://github.com/OpenTopography
     name: GitHub Organization
-    type: GitHub Organization
+    type: GitHubOrganization
     description: OpenTopography open-source projects and tooling.
   - url: https://opentopography.org/contact
     name: Contact
@@ -85,7 +85,7 @@ common:
     description: OpenTopography privacy policy.
   - url: https://opentopography.org/usageterms
     name: Terms of Service
-    type: Terms of Service
+    type: TermsOfService
     description: OpenTopography terms of use for data and services.
 maintainers:
   - FN: Kin Lane
