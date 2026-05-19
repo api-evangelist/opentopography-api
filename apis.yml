@@ -51,6 +51,8 @@ apis:
       - type: SignUp
         url: https://portal.opentopography.org/myopentopo
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/opentopography
   - url: https://opentopography.org/
     name: OpenTopography
     type: Website
