@@ -1,0 +1,195 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "OpenTopography API",
+    "version": "1.0.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Public",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Access global topographic datasets including SRTM GL3 (Global 90m), GL1 (Global 30m), ALOS World 3D, SRTM15+ V2.1, GEBCO IceTopo, and GEBCO SubIceTopo (Global Bathymetry 500m). Note: Requests are limited to 500,000,000 km� for GEDI L3, 125,000,000 km� for SRTM15+ V2.1, GEBCO IceTopo, and GEBCO SubIceTopo, 4,050,000 km� for SRTM GL3, COP90 and 450,000 km� for all other data.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "/API/globaldem",
+            "params": [
+              {
+                "name": "demtype",
+                "value": "SRTMGL3",
+                "type": "query",
+                "description": "Available global raster datasets: <ul><li>SRTMGL3 (SRTM GL3 90m)</li><li>SRTMGL1 (SRTM GL1 30m) </li><li>SRTMGL1_E (SRTM GL1 Ellipsoidal 30m)</li><li>AW3D30 (ALOS World 3D 30m)</li><li>AW3D30_E (ALOS World 3D Ellipsoidal, 30m)</li><li>SRTM15Plus (Global Bathymetry SRTM15+ V2.1 500m)</li><li>NASADEM (NASADEM Global DEM)</li><li>COP30 (Copernicus Global DSM 30m)</li><li>COP90 (Copernicus Global DSM 90m)</li><li>EU_DTM (DTM 30m)</li><li>GEDI_L3 (DTM 1000m)</li><li>GEBCOIceTopo (Global Bathymetry 500m)</li><li>GEBCOSubIceTopo (Global Bathymetry 500m)</li></ul> * <i>All datasets require API key for access. Users can request an API key via myOpenTopo in the OpenTopography portal.</i>"
+              },
+              {
+                "name": "south",
+                "value": "50",
+                "type": "query",
+                "description": "WGS 84 bounding box south coordinates"
+              },
+              {
+                "name": "north",
+                "value": "50.1",
+                "type": "query",
+                "description": "WGS 84 bounding box north coordinates"
+              },
+              {
+                "name": "west",
+                "value": "14.35",
+                "type": "query",
+                "description": "WGS 84 bounding box west coordinates"
+              },
+              {
+                "name": "east",
+                "value": "14.6",
+                "type": "query",
+                "description": "WGS 84 bounding box east coordinates"
+              },
+              {
+                "name": "outputFormat",
+                "value": "GTiff",
+                "type": "query",
+                "description": "Output Format (optional) - GTiff for GeoTiff, AAIGrid for Arc ASCII Grid, HFA for Erdas Imagine (.IMG). Defaults to GTiff if parameter is not provided"
+              },
+              {
+                "name": "API_Key",
+                "value": "",
+                "type": "query",
+                "description": "All datasets require API key for access. Users can request an API key via myOpenTopo in the OpenTopography portal. <br>* <i>See OpenTopography Terms of Use for more information on appropriate use of the API.</i>"
+              }
+            ]
+          },
+          "docs": "Access global topographic datasets including SRTM GL3 (Global 90m), GL1 (Global 30m), ALOS World 3D, SRTM15+ V2.1, GEBCO IceTopo, and GEBCO SubIceTopo (Global Bathymetry 500m). Note: Requests are limited to 500,000,000 km� for GEDI L3, 125,000,000 km� for SRTM15+ V2.1, GEBCO IceTopo, and GEBCO SubIceTopo, 4,050,000 km� for SRTM GL3, COP90 and 450,000 km� for all other data."
+        },
+        {
+          "info": {
+            "name": "Access U.S. Geological Survey 3DEP raster datasets including 1m, 1/3 arc-second (10m), 1 arc-second (30m) Digital Elevation Model. Note: 1m DEM is currently restricted to academic users. Requests are limited to 225,000 km� for USGS30m, 25,000 km� for USGS10m, 250 km� for USGS1m data. This API service relies on the USGS National Map. OpenTopography does not control the availability or performance of this service.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "/API/usgsdem",
+            "params": [
+              {
+                "name": "datasetName",
+                "value": "USGS30m",
+                "type": "query",
+                "description": "USGS 3DEP raster: USGS1m, USGS10m, USGS30m"
+              },
+              {
+                "name": "south",
+                "value": "40.234",
+                "type": "query",
+                "description": "WGS 84 bounding box south coordinates"
+              },
+              {
+                "name": "north",
+                "value": "40.288",
+                "type": "query",
+                "description": "WGS 84 bounding box north coordinates"
+              },
+              {
+                "name": "west",
+                "value": "-105.673",
+                "type": "query",
+                "description": "WGS 84 bounding box west coordinates"
+              },
+              {
+                "name": "east",
+                "value": "-105.583",
+                "type": "query",
+                "description": "WGS 84 bounding box east coordinates"
+              },
+              {
+                "name": "outputFormat",
+                "value": "GTiff",
+                "type": "query",
+                "description": "Output Format (optional) - GTiff for GeoTiff, AAIGrid for Arc ASCII Grid, HFA for Erdas Imagine (.IMG). Defaults to GTiff if parameter is not provided"
+              },
+              {
+                "name": "API_Key",
+                "value": "",
+                "type": "query",
+                "description": "USGS 3DEP 1m raster dataset is currently restricted to academic users. Academic users can request access to these data via the OpenTopography portal. Non-academic users can enquire about an enterprise API key by emailing info@opentopography.org. <br>* <i>See OpenTopography Terms of Use for more information on appropriate use of the API.</i>"
+              }
+            ]
+          },
+          "docs": "Access U.S. Geological Survey 3DEP raster datasets including 1m, 1/3 arc-second (10m), 1 arc-second (30m) Digital Elevation Model. Note: 1m DEM is currently restricted to academic users. Requests are limited to 225,000 km� for USGS30m, 25,000 km� for USGS10m, 250 km� for USGS1m data. This API service relies on the USGS National Map. OpenTopography does not control the availability or performance of this service."
+        },
+        {
+          "info": {
+            "name": "Bounding box-based catalog search of topography datasets hosted by OpenTopography.",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "/API/otCatalog",
+            "params": [
+              {
+                "name": "productFormat",
+                "value": "PointCloud",
+                "type": "query",
+                "description": "Data product Format (optional) - Point Cloud or Raster. Defaults to all data products"
+              },
+              {
+                "name": "minx",
+                "value": "-123.2",
+                "type": "query",
+                "description": "WGS 84 bounding box west coordinates. <sup>*</sup>Required if polygon parameter is not provided."
+              },
+              {
+                "name": "miny",
+                "value": "44.8",
+                "type": "query",
+                "description": "WGS 84 bounding box south coordinates. <sup>*</sup>Required if polygon parameter is not provided."
+              },
+              {
+                "name": "maxx",
+                "value": "-121.9",
+                "type": "query",
+                "description": "WGS 84 bounding box east coordinates. <sup>*</sup>Required if polygon parameter is not provided."
+              },
+              {
+                "name": "maxy",
+                "value": "45.7",
+                "type": "query",
+                "description": "WGS 84 bounding box north coordinates. <sup>*</sup>Required if polygon parameter is not provided."
+              },
+              {
+                "name": "polygon",
+                "value": "",
+                "type": "query",
+                "description": "A string of points to make up a polygon (WKT format). The first and last points should match to complete the polygonal shape. <sup>*</sup>If this parameter is provided, the bounding box parameters: minx, miny, maxx, and maxy will be ignored. <br><br><i>Example: -117.5,32.5,-117.5,33.1,-116.7,33.1,-116.7,32.5,-117.0,32.3,-117.5,32.5</i>"
+              },
+              {
+                "name": "detail",
+                "value": "false",
+                "type": "query",
+                "description": "Show detailed metadata (optional). Defaults is false and shows specific metadata information."
+              },
+              {
+                "name": "outputFormat",
+                "value": "xml",
+                "type": "query",
+                "description": "Output Format (optional) - Defaults to json if parameter is not provided. Other available formats - xml"
+              },
+              {
+                "name": "include_federated",
+                "value": "false",
+                "type": "query",
+                "description": "Include federated datasets available via OpenTopography (e.g. USGS 3DEP Catalog)"
+              }
+            ]
+          },
+          "docs": "Bounding box-based catalog search of topography datasets hosted by OpenTopography."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
