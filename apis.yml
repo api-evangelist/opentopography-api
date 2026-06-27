@@ -48,7 +48,7 @@ apis:
         url: openapi/opentopography-api-openapi.yml
       - type: Portal
         url: https://portal.opentopography.org/
-      - type: SignUp
+      - type: Signup
         url: https://portal.opentopography.org/myopentopo
 common:
   - type: LinkedIn
