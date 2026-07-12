@@ -51,6 +51,8 @@ apis:
       - type: Signup
         url: https://portal.opentopography.org/myopentopo
 common:
+  - type: DomainSecurity
+    url: security/opentopography-api-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/opentopography
   - url: https://opentopography.org/
