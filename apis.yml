@@ -7,9 +7,21 @@ description: >-
   topographic data from around the world, making it easier for researchers,
   engineers, and scientists to study the Earth's surface and its features.
 type: Index
+accessModel:
+  pricing: freemium
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Freemium
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/opentopography-api.png
 tags:
   - DEM
   - Data
@@ -24,32 +36,21 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/opentopography-api/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 apis:
-  - aid: opentopography-api:opentopography-api
-    name: OpenTopography API
-    description: >-
-      Access global and regional topographic raster datasets including SRTM,
-      ALOS World 3D, NASADEM, Copernicus DSM, USGS 3DEP DEMs (1m, 10m, 30m),
-      and bathymetry products. Provides programmatic retrieval of digital
-      elevation models for analysis, visualization, and downstream geospatial
-      workflows. Quotas vary by dataset; the 1m USGS DEM is restricted to
-      academic users.
-    humanURL: https://portal.opentopography.org/apidocs
-    tags:
-      - DEM
-      - Data
-      - Elevation
-      - Geospatial
-      - LiDAR
-      - Topography
-    properties:
-      - type: Documentation
-        url: https://portal.opentopography.org/apidocs
-      - type: OpenAPI
-        url: openapi/opentopography-api-openapi.yml
-      - type: Portal
-        url: https://portal.opentopography.org/
-      - type: Signup
-        url: https://portal.opentopography.org/myopentopo
+- aid: opentopography-api:opentopography-api-public-api
+  name: OpenTopography API Public API
+  description: The Public API from OpenTopography API — 3 operation(s) for public.
+  humanURL: https://portal.opentopography.org/apidocs
+  tags:
+  - Public
+  properties:
+  - type: OpenAPI
+    url: openapi/opentopography-api-public-api-openapi.yml
+  - type: Documentation
+    url: https://portal.opentopography.org/apidocs
+  - type: Portal
+    url: https://portal.opentopography.org/
+  - type: Signup
+    url: https://portal.opentopography.org/myopentopo
 common:
   - type: DomainSecurity
     url: security/opentopography-api-domain-security.yml
