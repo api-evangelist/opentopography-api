@@ -1,0 +1,1095 @@
+{
+  "item": [
+    {
+      "id": "479db62d-9563-49a1-8809-1a0625709e5e",
+      "name": "Public",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "0e47373f-8b5b-49ec-a85a-65bde3059732",
+          "name": "Access global topographic datasets including SRTM GL3 (Global 90m), GL1 (Global 30m), ALOS World 3D, SRTM15+ V2.1, GEBCO IceTopo, and GEBCO SubIceTopo (Global Bathymetry 500m). Note: Requests are limited to 500,000,000 km� for GEDI L3, 125,000,000 km� for SRTM15+ V2.1, GEBCO IceTopo, and GEBCO SubIceTopo, 4,050,000 km� for SRTM GL3, COP90 and 450,000 km� for all other data.",
+          "request": {
+            "name": "Access global topographic datasets including SRTM GL3 (Global 90m), GL1 (Global 30m), ALOS World 3D, SRTM15+ V2.1, GEBCO IceTopo, and GEBCO SubIceTopo (Global Bathymetry 500m). Note: Requests are limited to 500,000,000 km� for GEDI L3, 125,000,000 km� for SRTM15+ V2.1, GEBCO IceTopo, and GEBCO SubIceTopo, 4,050,000 km� for SRTM GL3, COP90 and 450,000 km� for all other data.",
+            "description": {},
+            "url": {
+              "path": [
+                "globaldem"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "demtype",
+                  "value": "<string>",
+                  "description": "(Required) Available global raster datasets: <ul><li>SRTMGL3 (SRTM GL3 90m)</li><li>SRTMGL1 (SRTM GL1 30m) </li><li>SRTMGL1_E (SRTM GL1 Ellipsoidal 30m)</li><li>AW3D30 (ALOS World 3D 30m)</li><li>AW3D30_E (ALOS World 3D Ellipsoidal, 30m)</li><li>SRTM15Plus (Global Bathymetry SRTM15+ V2.1 500m)</li><li>NASADEM (NASADEM Global DEM)</li><li>COP30 (Copernicus Global DSM 30m)</li><li>COP90 (Copernicus Global DSM 90m)</li><li>EU_DTM (DTM 30m)</li><li>GEDI_L3 (DTM 1000m)</li><li>GEBCOIceTopo (Global Bathymetry 500m)</li><li>GEBCOSubIceTopo (Global Bathymetry 500m)</li></ul> * <i>All datasets require API key for access. Users can request an API key via myOpenTopo in the OpenTopography portal.</i>"
+                },
+                {
+                  "disabled": false,
+                  "key": "south",
+                  "value": "<number>",
+                  "description": "(Required) WGS 84 bounding box south coordinates"
+                },
+                {
+                  "disabled": false,
+                  "key": "north",
+                  "value": "<number>",
+                  "description": "(Required) WGS 84 bounding box north coordinates"
+                },
+                {
+                  "disabled": false,
+                  "key": "west",
+                  "value": "<number>",
+                  "description": "(Required) WGS 84 bounding box west coordinates"
+                },
+                {
+                  "disabled": false,
+                  "key": "east",
+                  "value": "<number>",
+                  "description": "(Required) WGS 84 bounding box east coordinates"
+                },
+                {
+                  "disabled": false,
+                  "key": "outputFormat",
+                  "value": "GTiff",
+                  "description": "Output Format (optional) - GTiff for GeoTiff, AAIGrid for Arc ASCII Grid, HFA for Erdas Imagine (.IMG). Defaults to GTiff if parameter is not provided"
+                },
+                {
+                  "disabled": false,
+                  "key": "API_Key",
+                  "value": "demoapikeyot2022",
+                  "description": "(Required) All datasets require API key for access. Users can request an API key via myOpenTopo in the OpenTopography portal. <br>* <i>See OpenTopography Terms of Use for more information on appropriate use of the API.</i>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "c8168a9b-1330-4dc1-a843-0c6ef5638269",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "globaldem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "demtype",
+                      "value": "SRTMGL3"
+                    },
+                    {
+                      "key": "south",
+                      "value": "50"
+                    },
+                    {
+                      "key": "north",
+                      "value": "50.1"
+                    },
+                    {
+                      "key": "west",
+                      "value": "14.35"
+                    },
+                    {
+                      "key": "east",
+                      "value": "14.6"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "d676ecd8-055b-40a3-8c1d-fa81b4c8e1dd",
+              "name": "No Data",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "globaldem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "demtype",
+                      "value": "SRTMGL3"
+                    },
+                    {
+                      "key": "south",
+                      "value": "50"
+                    },
+                    {
+                      "key": "north",
+                      "value": "50.1"
+                    },
+                    {
+                      "key": "west",
+                      "value": "14.35"
+                    },
+                    {
+                      "key": "east",
+                      "value": "14.6"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "e88bb12d-3b0f-4890-840a-3cc404db9345",
+              "name": "Bad request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "globaldem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "demtype",
+                      "value": "SRTMGL3"
+                    },
+                    {
+                      "key": "south",
+                      "value": "50"
+                    },
+                    {
+                      "key": "north",
+                      "value": "50.1"
+                    },
+                    {
+                      "key": "west",
+                      "value": "14.35"
+                    },
+                    {
+                      "key": "east",
+                      "value": "14.6"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "227f4662-0f2e-4dd0-b451-6c8c6e678452",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "globaldem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "demtype",
+                      "value": "SRTMGL3"
+                    },
+                    {
+                      "key": "south",
+                      "value": "50"
+                    },
+                    {
+                      "key": "north",
+                      "value": "50.1"
+                    },
+                    {
+                      "key": "west",
+                      "value": "14.35"
+                    },
+                    {
+                      "key": "east",
+                      "value": "14.6"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "f9b7ad28-bbd9-4144-a379-1e8fae22630f",
+              "name": "Internal error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "globaldem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "demtype",
+                      "value": "SRTMGL3"
+                    },
+                    {
+                      "key": "south",
+                      "value": "50"
+                    },
+                    {
+                      "key": "north",
+                      "value": "50.1"
+                    },
+                    {
+                      "key": "west",
+                      "value": "14.35"
+                    },
+                    {
+                      "key": "east",
+                      "value": "14.6"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a0dbe697-1f87-4af5-a0c3-63dda6786c94",
+          "name": "Access U.S. Geological Survey 3DEP raster datasets including 1m, 1/3 arc-second (10m), 1 arc-second (30m) Digital Elevation Model. Note: 1m DEM is currently restricted to academic users. Requests are limited to 225,000 km� for USGS30m, 25,000 km� for USGS10m, 250 km� for USGS1m data. This API service relies on the USGS National Map. OpenTopography does not control the availability or performance of this service.",
+          "request": {
+            "name": "Access U.S. Geological Survey 3DEP raster datasets including 1m, 1/3 arc-second (10m), 1 arc-second (30m) Digital Elevation Model. Note: 1m DEM is currently restricted to academic users. Requests are limited to 225,000 km� for USGS30m, 25,000 km� for USGS10m, 250 km� for USGS1m data. This API service relies on the USGS National Map. OpenTopography does not control the availability or performance of this service.",
+            "description": {},
+            "url": {
+              "path": [
+                "usgsdem"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "datasetName",
+                  "value": "<string>",
+                  "description": "(Required) USGS 3DEP raster: USGS1m, USGS10m, USGS30m"
+                },
+                {
+                  "disabled": false,
+                  "key": "south",
+                  "value": "<number>",
+                  "description": "(Required) WGS 84 bounding box south coordinates"
+                },
+                {
+                  "disabled": false,
+                  "key": "north",
+                  "value": "<number>",
+                  "description": "(Required) WGS 84 bounding box north coordinates"
+                },
+                {
+                  "disabled": false,
+                  "key": "west",
+                  "value": "<number>",
+                  "description": "(Required) WGS 84 bounding box west coordinates"
+                },
+                {
+                  "disabled": false,
+                  "key": "east",
+                  "value": "<number>",
+                  "description": "(Required) WGS 84 bounding box east coordinates"
+                },
+                {
+                  "disabled": false,
+                  "key": "outputFormat",
+                  "value": "GTiff",
+                  "description": "Output Format (optional) - GTiff for GeoTiff, AAIGrid for Arc ASCII Grid, HFA for Erdas Imagine (.IMG). Defaults to GTiff if parameter is not provided"
+                },
+                {
+                  "disabled": false,
+                  "key": "API_Key",
+                  "value": "demoapikeyot2022",
+                  "description": "(Required) USGS 3DEP 1m raster dataset is currently restricted to academic users. Academic users can request access to these data via the OpenTopography portal. Non-academic users can enquire about an enterprise API key by emailing info@opentopography.org. <br>* <i>See OpenTopography Terms of Use for more information on appropriate use of the API.</i>"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "0cb2742e-9bae-44de-a457-78133a80426e",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "usgsdem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "datasetName",
+                      "value": "USGS30m"
+                    },
+                    {
+                      "key": "south",
+                      "value": "40.234"
+                    },
+                    {
+                      "key": "north",
+                      "value": "40.288"
+                    },
+                    {
+                      "key": "west",
+                      "value": "-105.673"
+                    },
+                    {
+                      "key": "east",
+                      "value": "-105.583"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "07c4cd87-14b6-4dc1-a7b6-4eca68ac15a8",
+              "name": "No Data",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "usgsdem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "datasetName",
+                      "value": "USGS30m"
+                    },
+                    {
+                      "key": "south",
+                      "value": "40.234"
+                    },
+                    {
+                      "key": "north",
+                      "value": "40.288"
+                    },
+                    {
+                      "key": "west",
+                      "value": "-105.673"
+                    },
+                    {
+                      "key": "east",
+                      "value": "-105.583"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "dae4bce5-8853-4125-bfe3-034d239979cc",
+              "name": "Bad request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "usgsdem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "datasetName",
+                      "value": "USGS30m"
+                    },
+                    {
+                      "key": "south",
+                      "value": "40.234"
+                    },
+                    {
+                      "key": "north",
+                      "value": "40.288"
+                    },
+                    {
+                      "key": "west",
+                      "value": "-105.673"
+                    },
+                    {
+                      "key": "east",
+                      "value": "-105.583"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "55413565-2636-4c16-8938-109896f3b82e",
+              "name": "Unauthorized",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "usgsdem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "datasetName",
+                      "value": "USGS30m"
+                    },
+                    {
+                      "key": "south",
+                      "value": "40.234"
+                    },
+                    {
+                      "key": "north",
+                      "value": "40.288"
+                    },
+                    {
+                      "key": "west",
+                      "value": "-105.673"
+                    },
+                    {
+                      "key": "east",
+                      "value": "-105.583"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "37f95fe7-0116-4729-87d0-47b4c6473a91",
+              "name": "Internal error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "usgsdem"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "datasetName",
+                      "value": "USGS30m"
+                    },
+                    {
+                      "key": "south",
+                      "value": "40.234"
+                    },
+                    {
+                      "key": "north",
+                      "value": "40.288"
+                    },
+                    {
+                      "key": "west",
+                      "value": "-105.673"
+                    },
+                    {
+                      "key": "east",
+                      "value": "-105.583"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "GTiff"
+                    },
+                    {
+                      "key": "API_Key",
+                      "value": "demoapikeyot2022"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "48fbc47d-4c13-4ea0-8571-639d3e272b90",
+          "name": "Bounding box-based catalog search of topography datasets hosted by OpenTopography.",
+          "request": {
+            "name": "Bounding box-based catalog search of topography datasets hosted by OpenTopography.",
+            "description": {},
+            "url": {
+              "path": [
+                "otCatalog"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "productFormat",
+                  "value": "<string>",
+                  "description": "Data product Format (optional) - Point Cloud or Raster. Defaults to all data products"
+                },
+                {
+                  "disabled": false,
+                  "key": "minx",
+                  "value": "<number>",
+                  "description": "WGS 84 bounding box west coordinates. <sup>*</sup>Required if polygon parameter is not provided."
+                },
+                {
+                  "disabled": false,
+                  "key": "miny",
+                  "value": "<number>",
+                  "description": "WGS 84 bounding box south coordinates. <sup>*</sup>Required if polygon parameter is not provided."
+                },
+                {
+                  "disabled": false,
+                  "key": "maxx",
+                  "value": "<number>",
+                  "description": "WGS 84 bounding box east coordinates. <sup>*</sup>Required if polygon parameter is not provided."
+                },
+                {
+                  "disabled": false,
+                  "key": "maxy",
+                  "value": "<number>",
+                  "description": "WGS 84 bounding box north coordinates. <sup>*</sup>Required if polygon parameter is not provided."
+                },
+                {
+                  "disabled": false,
+                  "key": "polygon",
+                  "value": "<string>",
+                  "description": "A string of points to make up a polygon (WKT format). The first and last points should match to complete the polygonal shape. <sup>*</sup>If this parameter is provided, the bounding box parameters: minx, miny, maxx, and maxy will be ignored. <br><br><i>Example: -117.5,32.5,-117.5,33.1,-116.7,33.1,-116.7,32.5,-117.0,32.3,-117.5,32.5</i>"
+                },
+                {
+                  "disabled": false,
+                  "key": "detail",
+                  "value": "<boolean>",
+                  "description": "Show detailed metadata (optional). Defaults is false and shows specific metadata information."
+                },
+                {
+                  "disabled": false,
+                  "key": "outputFormat",
+                  "value": "json",
+                  "description": "Output Format (optional) - Defaults to json if parameter is not provided. Other available formats - xml"
+                },
+                {
+                  "disabled": false,
+                  "key": "include_federated",
+                  "value": "<boolean>",
+                  "description": "Include federated datasets available via OpenTopography (e.g. USGS 3DEP Catalog)"
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d46888ee-882a-440c-aab0-e60ae699f0d0",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "otCatalog"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "productFormat",
+                      "value": "PointCloud"
+                    },
+                    {
+                      "key": "minx",
+                      "value": "-123.2"
+                    },
+                    {
+                      "key": "miny",
+                      "value": "44.8"
+                    },
+                    {
+                      "key": "maxx",
+                      "value": "-121.9"
+                    },
+                    {
+                      "key": "maxy",
+                      "value": "45.7"
+                    },
+                    {
+                      "key": "polygon",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "detail",
+                      "value": "false"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "xml"
+                    },
+                    {
+                      "key": "include_federated",
+                      "value": "false"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "63a81428-ff18-45e4-9b81-0a72d2b4be91",
+              "name": "No Data",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "otCatalog"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "productFormat",
+                      "value": "PointCloud"
+                    },
+                    {
+                      "key": "minx",
+                      "value": "-123.2"
+                    },
+                    {
+                      "key": "miny",
+                      "value": "44.8"
+                    },
+                    {
+                      "key": "maxx",
+                      "value": "-121.9"
+                    },
+                    {
+                      "key": "maxy",
+                      "value": "45.7"
+                    },
+                    {
+                      "key": "polygon",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "detail",
+                      "value": "false"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "xml"
+                    },
+                    {
+                      "key": "include_federated",
+                      "value": "false"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "No Content",
+              "code": 204,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "f8e16ad5-9226-4738-aff4-6f940cc6a60e",
+              "name": "Bad request",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "otCatalog"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "productFormat",
+                      "value": "PointCloud"
+                    },
+                    {
+                      "key": "minx",
+                      "value": "-123.2"
+                    },
+                    {
+                      "key": "miny",
+                      "value": "44.8"
+                    },
+                    {
+                      "key": "maxx",
+                      "value": "-121.9"
+                    },
+                    {
+                      "key": "maxy",
+                      "value": "45.7"
+                    },
+                    {
+                      "key": "polygon",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "detail",
+                      "value": "false"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "xml"
+                    },
+                    {
+                      "key": "include_federated",
+                      "value": "false"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Bad Request",
+              "code": 400,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "1e403e20-a193-4634-894e-f02c7d81871c",
+              "name": "Internal error",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "otCatalog"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "productFormat",
+                      "value": "PointCloud"
+                    },
+                    {
+                      "key": "minx",
+                      "value": "-123.2"
+                    },
+                    {
+                      "key": "miny",
+                      "value": "44.8"
+                    },
+                    {
+                      "key": "maxx",
+                      "value": "-121.9"
+                    },
+                    {
+                      "key": "maxy",
+                      "value": "45.7"
+                    },
+                    {
+                      "key": "polygon",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "detail",
+                      "value": "false"
+                    },
+                    {
+                      "key": "outputFormat",
+                      "value": "xml"
+                    },
+                    {
+                      "key": "include_federated",
+                      "value": "false"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "/API",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "c66a987f-3054-47b9-8057-1c2be7b9f286",
+    "name": "OpenTopography Public API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "",
+      "type": "text/plain"
+    }
+  }
+}
