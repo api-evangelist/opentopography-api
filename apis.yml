@@ -64,6 +64,12 @@ apis:
   - type: Signup
     url: https://portal.opentopography.org/myopentopo
 common:
+  - type: Plans
+    url: plans/opentopography-api-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/opentopography-api-rate-limits.yml
+  - type: FinOps
+    url: finops/opentopography-api-finops.yml
   - url: https://opentopography.org/news
     type: Blog
   - url: https://opentopography.org/index.php/news/rss_2.0
