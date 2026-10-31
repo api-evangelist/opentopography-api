@@ -1,4 +1,4 @@
-# OpenTopography API (opentopography-api)
+# OpenTopography API
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,69 +66,111 @@
 
 OpenTopography API is a web service that provides users with access to high-resolution topographic data and tools for analysis and visualization. The API allows users to query a vast collection of LiDAR and other topographic data from around the world, making it easier for researchers, engineers, and scientists to study the Earth's surface and its features.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/opentopography-api/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/opentopography-api/refs/heads/main/apis.yml)
+**Areas:** DEM · Data · Elevation · Geospatial · LiDAR · Topographical · Topography
 
-## Scope
+## OpenTopography API on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for OpenTopography API is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/opentopography-api/](https://apis.io/providers/opentopography-api/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (1)
 
-- DEM
-- Data
-- Elevation
-- Geospatial
-- LiDAR
-- Topographical
-- Topography
+- [OpenTopography API Public API](https://apis.io/apis/opentopography-api/opentopography-api-public-api/) — The Public API from OpenTopography API — 3 operation(s) for public.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2024-11-14
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Collections (2)
 
-### OpenTopography API
+Postman and Open Collection request collections.
 
-Access global and regional topographic raster datasets including SRTM, ALOS World 3D, NASADEM, Copernicus DSM, USGS 3DEP DEMs (1m, 10m, 30m), and bathymetry products. Provides programmatic retrieval of digital elevation models for analysis, visualization, and downstream geospatial workflows. Quotas vary by dataset; the 1m USGS DEM is restricted to academic users.
+- [OpenTopography API](https://apis.io/collections/opentopography-api/open-opentopography-api/)
+- [OpenTopography Public API](https://apis.io/collections/opentopography-api/open-opentopography-api-public-api/)
 
-- **Human URL:** [https://portal.opentopography.org/apidocs](https://portal.opentopography.org/apidocs)
+#### Security (1)
 
-#### Tags
+Authentication, trust centre, and vulnerability disclosure.
 
-- DEM
-- Data
-- Elevation
-- Geospatial
-- LiDAR
-- Topography
+- [Opentopography Api Domain Security](https://apis.io/security/opentopography-api/opentopography-api-domain-security/)
 
-#### Properties
+#### Plans and pricing (1)
 
-- [Documentation](https://portal.opentopography.org/apidocs)
-- [OpenAPI](openapi/opentopography-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/opentopography-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/opentopography-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [Portal](https://portal.opentopography.org/)
-- [Sign Up](https://portal.opentopography.org/myopentopo)
+Published plans, tiers and prices.
 
-## Common Properties
+- [Opentopography Api Plans Pricing](https://apis.io/plans/opentopography-api/opentopography-api-plans-pricing/)
 
-- [LinkedIn](https://www.linkedin.com/company/opentopography)
+#### Rate limits (1)
+
+Published request limits.
+
+- [Opentopography Api Rate Limits](https://apis.io/rate-limits/opentopography-api/opentopography-api-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Opentopography Api Finops](https://apis.io/finops/opentopography-api/opentopography-api-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://opentopography.org/)
-- [Portal](https://portal.opentopography.org/)
 - [Documentation](https://portal.opentopography.org/apidocs)
-- [Blog](https://opentopography.org/blog)
-- [GitHub Organization](https://github.com/OpenTopography)
 - [Support](https://opentopography.org/contact)
-- [Citations](https://opentopography.org/citations)
-- [Privacy](https://opentopography.org/privacy)
-- [Terms of Service](https://opentopography.org/usageterms)
+- [Blog](https://opentopography.org/news)
+- [Terms of service](https://opentopography.org/usageterms)
+- [GitHub](https://github.com/OpenTopography)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 30.7** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 39.2 |
+| Contract governance | 0.0 |
+| Operational transparency | 13.2 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 42.1 |
+
+**Agent readiness 21.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/opentopography-api/](https://apis.io/providers/opentopography-api/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OpenTopography API: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/opentopography-api/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
